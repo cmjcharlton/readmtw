@@ -10,7 +10,7 @@ Authors@R: c(person("Chris", "Charlton", role = c("aut", "cre", "cph"), email = 
   person("SR", "Baum", role = "cph", comment = "POLE library author"), 
   person("Felix", "Gorny", role = "cph", comment = "POLE library author"), 
   person("https://github.com/tatarize", role = "cph", comment = "ARJ Decompression routine structure"))
-Description: Allows extraction of data from the historic Minitab .mtw file format. Note that since Minitab release 20 this has been superceeded by the.mwx format, which consists of JSON files in a zip container, which this package does not support.
+Description: Allows extraction of data from the historic Minitab .mtw file format. Note that since Minitab release 20 this has been superseded by the .mwx format, which consists of JSON files in a zip container, which this package does not support.
 Encoding: UTF-8
 License: MIT + file LICENSE
 URL: https://github.com/cmjcharlton/readmtw
