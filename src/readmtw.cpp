@@ -4,6 +4,7 @@
 
 #include "arj.h"
 #include "pole.h"
+#include "utf8.h"
 
 #include <bit>
 #include <chrono>
@@ -173,7 +174,12 @@ static void skipBytes(POLE::Stream& str, std::size_t off) {
   }
   std::u16string s(slen, ' '); // 2-byte characters
   if (readRec(str, s.data(), sizeof(char16_t) * s.length()) == false) return result;
-  result = std::wstring_convert<std::codecvt_utf8_utf16<char16_t>, char16_t>{}.to_bytes(s);
+  
+  // Replaced following line a with call to utfcpp library to pass CRAN checks, as it causes 
+  // a deprecation warning
+  // result = std::wstring_convert<std::codecvt_utf8_utf16<char16_t>, char16_t>{}.to_bytes(s);
+  result = utf8::utf16to8(s);
+  
   auto nullpos = result.find('\0');
   if (nullpos != std::string::npos) {
     result.erase(nullpos);

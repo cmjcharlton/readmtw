@@ -14,6 +14,8 @@
 #' Support for structured storage is provided by the POLE library (BSD license)
 #' Support for decompressing the ARJ format is based on code from the pyembroidery 
 #' project (MIT license)
+#' Support for conversion of UTF-16 strings to UTF-8 is provided by the utfcpp
+#' library (Boost Software License 1.0)
 #' 
 #' Disclaimer:
 #' The details of the format were mostly determined through the examination of
