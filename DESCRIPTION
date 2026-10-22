@@ -1,0 +1,19 @@
+Package: readmtw
+Type: Package
+Title: Read Data from Historic .mtw Worksheet Files
+Version: 0.6.0
+Date: 2026-10-22
+Authors@R: c(person("Chris", "Charlton", role = c("aut", "cre", "cph"), email = "c.charlton@bristol.ac.uk"), 
+  person("Ariya", "Hidayat", role = "cph", comment = "POLE library author"), 
+  person("Dmitry", "Fedorov", role = "cph", comment = "POLE library author"), 
+  person("Michel", "Boudinot", role = "cph", comment = "POLE library author"), 
+  person("SR", "Baum", role = "cph", comment = "POLE library author"), 
+  person("Felix", "Gorny", role = "cph", comment = "POLE library author"), 
+  person("https://github.com/tatarize", role = "cph", comment = "ARJ Decompression routine structure"))
+Description: Allows extraction of data from the historic Minitab .mtw file format. Note that since Minitab release 20 this has been superceeded by the.mwx format, which consists of JSON files in a zip container, which this package does not support.
+Encoding: UTF-8
+License: MIT + file LICENSE
+URL: https://github.com/cmjcharlton/readmtw
+Imports: Rcpp (>= 1.1.2)
+LinkingTo: Rcpp
+Config/roxygen2/version: 8.1.0
