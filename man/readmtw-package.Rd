@@ -53,6 +53,7 @@ download.file(
   mode = "wb"
 )
 moisture <- readMTW("PercentMoisture.MTW")
+unlink("PercentMoisture.MTW") # delete the downloaded file after reading 
 summary(moisture)
 moisturedf <- as.data.frame(moisture)
 summary(moisturedf)
