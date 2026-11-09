@@ -36,7 +36,7 @@ Chris Charlton \email{c.charlton@bristol.ac.uk}
 }
 
 \examples{
-\dontrun{
+\donttest{
 library(readmtw)
 
 archiveurl <- "https://web.archive.org/web/20140913043122/"

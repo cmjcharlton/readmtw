@@ -29,7 +29,7 @@
 #' @useDynLib readmtw, .registration = TRUE
 #'
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' library(readmtw)
 #' 
 #' archiveurl <- "https://web.archive.org/web/20140913043122/"
