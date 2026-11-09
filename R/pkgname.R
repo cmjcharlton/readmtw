@@ -40,13 +40,14 @@
 #' paintdf <- as.data.frame(paint)
 #' summary(paintdf)
 #' 
+#' filename <- tempfile(pattern = "PercentMoisture", fileext = ".MTW")
 #' download.file(
 #'   paste0(archiveurl, sampleurl, "PercentMoisture.MTW"), 
-#'   "PercentMoisture.MTW", 
+#'   filename, 
 #'   mode = "wb"
 #' )
-#' moisture <- readMTW("PercentMoisture.MTW")
-#' unlink("PercentMoisture.MTW") # delete the downloaded file after reading 
+#' moisture <- readMTW(filename)
+#' unlink(filename) # delete the downloaded file after reading 
 #' summary(moisture)
 #' moisturedf <- as.data.frame(moisture)
 #' summary(moisturedf)
