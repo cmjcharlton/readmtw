@@ -13,9 +13,10 @@ readMTP(filename, convert_names = TRUE)
 if defined. Defaults to TRUE}
 }
 \value{
-an object of class "MTWorksheet". This can be converted 
-into a data.frame with the \code{\link{as.data.frame}} function, provided that 
-all the columns are the same length.
+an object of class "MTWorksheet" containing any columns, matrices and
+constants read from the source file. This can be converted into a data.frame 
+with the \code{\link{as.data.frame}} function, provided that all the columns 
+are the same length.
 }
 \description{
 Reads data from the .mtp portable file format.

@@ -2,9 +2,10 @@
 #' @param filename path or url of file to open
 #' @param convert_names logical - indicates whether to name columns by their label
 #' if defined. Defaults to TRUE
-#' @return an object of class "MTWorksheet". This can be converted 
-#' into a data.frame with the \code{\link{as.data.frame}} function, provided that 
-#' all the columns are the same length.
+#' @return an object of class "MTWorksheet" containing any columns, matrices and
+#' constants read from the source file. This can be converted into a data.frame 
+#' with the \code{\link{as.data.frame}} function, provided that all the columns 
+#' are the same length.
 #' @export
 readMTW <- function(filename, convert_names = TRUE) {
   if (isFALSE(file.exists(filename))) {
