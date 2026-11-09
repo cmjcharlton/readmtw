@@ -13,7 +13,7 @@
 }
 \value{
 a \code{\link{data.frame}} object representing the columns stored
-in the "MTWorksheet" object passed in.
+in the "MTWorksheet" object passed in, or NULL if conversion is not possible.
 }
 \description{
 Convert the columns held in an "MTWorksheet" object into a data.frame

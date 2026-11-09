@@ -11,6 +11,9 @@
 
 \item{...}{other parameters}
 }
+\value{
+\code{\link[base]{invisible}(x)}
+}
 \description{
 Print "MTWorksheet" objects
 }

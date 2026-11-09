@@ -3,6 +3,7 @@
 #' @param ... other parameters
 #' @seealso \code{\link[base]{print}}
 #' @method print MTWorksheet
+#' @return \code{\link[base]{invisible}(x)}
 #' @export
 print.MTWorksheet <- function(x, ...) {
   wstitle <- attr(x, "title")
@@ -55,6 +56,7 @@ print.MTWorksheet <- function(x, ...) {
     }
     cat("\n")
   }
+  invisible(x)
 }
 
 #' Summarize "MTWorksheet" objects
@@ -82,6 +84,7 @@ summary.MTWorksheet <- function(object, ...) {
 #' @param ... other parameters
 #' @seealso \code{\link[base]{print}}
 #' @method print summary.MTWorksheet
+#' @return \code{\link[base]{invisible}(x)}
 #' @export
 print.summary.MTWorksheet <- function(x, ...) {
   wstitle <- attr(x, "title")
@@ -134,13 +137,14 @@ print.summary.MTWorksheet <- function(x, ...) {
     }
     cat("\n")
   }
+  invisible(x)
 }
 
 #' Convert the columns held in an "MTWorksheet" object into a data.frame
 #' @param x the "MTWorksheet" object to be converted
 #' @param  ... parameters to be passed to as.data.frame() function
 #' @return a \code{\link{data.frame}} object representing the columns stored
-#' in the "MTWorksheet" object passed in.
+#' in the "MTWorksheet" object passed in, or NULL if conversion is not possible.
 #' @export
 as.data.frame.MTWorksheet <- function(x, ...) {
   lens <- sapply(x$columns, length)
