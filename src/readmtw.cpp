@@ -1218,7 +1218,7 @@ static Rcpp::List readOle(std::iostream &fs) {
 //' This function allows reading data from a variety of historic Minitab formats
 //' 
 //' @param filename name of file to open
-//' @return A list containing a lists of constants, matrices and columns that are
+//' @return A list containing lists of constants, matrices and columns that are
 //' stored in the worksheet.
 //' @export
 // [[Rcpp::export]]

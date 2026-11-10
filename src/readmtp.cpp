@@ -288,7 +288,7 @@ static Rcpp::List readRecs(std::iostream &fs) {
 //' This function allows reading data the minitab portable file format (MTP)
 //' 
 //' @param filename name of file to open
-//' @return A list containing a lists of constants, matrices and columns that are
+//' @return A list containing lists of constants, matrices and columns that are
 //' stored in the worksheet.
 //' @export
 // [[Rcpp::export]]
