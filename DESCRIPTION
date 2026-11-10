@@ -1,8 +1,8 @@
 Package: readmtw
 Type: Package
 Title: Read Data from Historic 'Minitab' .mtw Worksheet Files
-Version: 0.6.0
-Date: 2026-10-22
+Version: 0.6.1
+Date: 2026-11-10
 Authors@R: c(person("Chris", "Charlton", role = c("aut", "cre", "cph"), email = "c.charlton@bristol.ac.uk"), 
   person("Ariya", "Hidayat", role = "cph", comment = "POLE library author"), 
   person("Dmitry", "Fedorov", role = "cph", comment = "POLE library author"), 
